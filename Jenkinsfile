@@ -21,7 +21,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                sh 'mvn exec:java -Dexec.mainClass="com.example.App"'
+                sh 'java -jar target/seleniumfirefox-1.0-SNAPSHOT.jar'
             }
         }
     }
